@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Dez-2024 às 02:16
+-- Tempo de geração: 05-Dez-2024 às 00:39
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 7.4.33
 
@@ -35,8 +35,19 @@ CREATE TABLE `aluno` (
   `endereco` varchar(255) DEFAULT NULL,
   `frequencia` int(11) DEFAULT NULL,
   `objetivo` varchar(255) DEFAULT NULL,
-  `data_matricula` date NOT NULL
+  `data_matricula` date DEFAULT NULL,
+  `ativo` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `aluno`
+--
+
+INSERT INTO `aluno` (`id`, `nome`, `data_nascimento`, `telefone`, `endereco`, `frequencia`, `objetivo`, `data_matricula`, `ativo`) VALUES
+(6, 'Alexandre Rossi Benassi', '2004-02-03', '111111111', 'Avenida Guiomar Gaspar Batista ', 5, 'Ficar bombado', '2030-12-04', 1),
+(7, 'Luiz', '2004-02-03', '111111111', 'Rua 1', 5, 'Ficar bombado', '2030-12-06', 0),
+(8, 'João', '2004-02-03', '111111111', 'Av Rio', 5, 'Ficar bombado', '2030-01-04', 0),
+(9, 'Paulo', '2004-02-03', '111111111', 'Rua malu', 5, 'Ficar bombado', '2024-12-04', 1);
 
 -- --------------------------------------------------------
 
@@ -119,7 +130,7 @@ ALTER TABLE `funcionario`
 -- AUTO_INCREMENT de tabela `aluno`
 --
 ALTER TABLE `aluno`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `exercicio`
