@@ -1,0 +1,134 @@
+table tr td {
+    vertical-align: middle;
+}
+
+td button {
+    margin: 5px;
+}
+
+td button i {
+    font-size: 20px;
+}
+
+.modal-header {
+    background: #262a31;
+    color: #fff;
+}
+
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.modal-body form .inputField {
+    padding-left: 20px;
+}
+
+form .inputField > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form .inputField > div label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#userForm form .inputField > div label::after {
+    content: "*";
+    color: red;
+}
+
+form .inputField > div input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    background: #f9f9f9;
+}
+
+form .inputField > div input:focus {
+    border-color: #4CAF50;
+    background-color: #fff;
+}
+
+.modal-footer .submit {
+    font-size: 18px;
+}
+
+#readData form .inputField > div input {
+    color: #000;
+    font-size: 18px;
+}
+
+#successMessage {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.newUser {
+    font-size: 16px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newUser i {
+    margin-right: 8px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.table {
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd;
+}
+
+.btn-info-custom {
+    padding: 0.375rem 0.75rem; /* Mesmo padding dos botões Bootstrap padrão */
+    font-size: 0.875rem;       /* Mesma fonte do tamanho sm */
+}
+
+.hidden { display: none; }
