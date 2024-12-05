@@ -47,7 +47,7 @@
 
     <div class="col-12 text-end conteudo-esconder-pdf">
         <div class="d-inline">
-            <button class="btn btn-success botao-gerar-pdf">
+            <button class="btn btn-danger botao-gerar-pdf">
                 <i class="bi bi-file-earmark-pdf"></i> GERAR PDF
             </button>
         </div>
