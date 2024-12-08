@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: url('Academia1.png'); 
+  background-size: 100%; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.content {
+  max-width: 1450px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content .card {
+  background: rgba(255, 255, 255, 0.9);
+  width: calc(33.33% - 20px);
+  text-align: center;
+  padding: 15px 30px 30px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.content .card .top {
+  height: 140px;
+  color: #fff;
+  padding: 12px 0 0 0;
+  clip-path: polygon(0 0, 100% 0, 100% 53%, 49% 100%, 0 53%);
+}
+
+.content .card .top .title {
+  font-size: 27px;
+  font-weight: 1000;
+}
+
+.content .card .top .price-sec {
+  margin-top: -10px;
+  font-weight: 800;
+}
+
+.content .card .top .price {
+  font-size: 61px;
+}
+
+.content .card .info {
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.content .card .details .one {
+  margin-top: 25px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content .card .details .one::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: #ddd;
+  height: 1px;
+  left: 0;
+  top: -12px;
+  border-radius: 25px;
+}
+
+.content .card .details .one i {
+  color: #2db94d;
+}
+
+.content .card .details i.fa-times {
+  color: #cd3241;
+}
+
+.content .card a {
+  outline: none;
+  border: none;
+  height: 52px;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.content .one .top,
+.content .one a {
+  background: #ff8830;
+}
+
+.content .two .top,
+.content .two a {
+  background: #117f09;
+}
+
+.content .three .top,
+.content .three a {
+  background: #0c38e7;
+}
+
+.content a:hover {
+  filter: brightness(90%);
+}
+
+@media (max-width:1000px) {
+  .content .card {
+    background: rgba(255, 255, 255, 0.9); 
+    width: calc(50% - 20px);
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width:715px) {
+  .content .card {
+    width: 100%;
+  }
+}
